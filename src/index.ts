@@ -18,10 +18,10 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Hello World!');
   });
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.listen(PORT, () => {
-    console.log('Listening on port ${ PORT }');
+    console.log('Listening on port ${PORT}');
 });

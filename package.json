@@ -4,7 +4,7 @@
   "description": "Cloud Run Deployment test - Build a SwaggerUI for the Mock Profile Service",
   "main": "index.ts",
   "scripts": {
-    "start": "node ./dist/src/index.js",
+    "start": "node ./dist/index.js",
     "tsc" : "tsc --outDir ./dist",
     "dev" : "npm run ts-watch",
     "ts-watch": "tsc-watch --project . --outDir ./dist --onSuccess \"nodemon ./dist/app.js\"",
