@@ -1,0 +1,27 @@
+{
+  "name": "cloud-run-node-express-test",
+  "version": "1.0.0",
+  "description": "Cloud Run Deployment test - Build a SwaggerUI for the Mock Profile Service",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node ./dist/src/index.js",
+    "tsc" : "tsc --outDir ./dist",
+    "dev" : "npm run ts-watch",
+    "ts-watch": "tsc-watch --project . --outDir ./dist --onSuccess \"nodemon ./dist/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PB",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.6",
+    "@types/swagger-ui-express": "^4.1.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "swagger-ui-express": "^4.6.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
